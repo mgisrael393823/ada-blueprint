@@ -1,8 +1,18 @@
 import './globals.css';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Montserrat, Inconsolata } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['900'], // Black weight
+  variable: '--font-montserrat',
+});
+
+const inconsolata = Inconsolata({
+  subsets: ['latin'],
+  weight: ['400'], // Regular weight
+  variable: '--font-inconsolata',
+});
 
 export const metadata: Metadata = {
   title: '220 Ada – Lease-Up Strategy & Competitive Blueprint',
@@ -16,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} font-sans`}>{children}</body>
+      <body className={`${montserrat.variable} ${inconsolata.variable} font-body bg-white`}>{children}</body>
     </html>
   );
 }
