@@ -1,0 +1,19 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# Run ESLint to check for JSX structure issues
+npm run lint:structure || (
+    echo "❌ JSX Structure validation failed! Please fix the issues and try committing again.";
+    echo "Run 'npm run lint:fix' to automatically fix some of these issues.";
+    echo "See FORMATTING_GUIDE.md for more details on proper React component formatting.";
+    exit 1;
+)
+
+# Run general linting
+npm run lint || (
+    echo "❌ ESLint check failed! Fix the issues and try again.";
+    exit 1;
+)
+
+# Success message
+echo "✅ Code structure validation passed!"

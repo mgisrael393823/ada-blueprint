@@ -102,14 +102,14 @@ export default function Sidebar() {
                   >
                     <div>
                       <div className="flex items-center">
-                        <span className="font-medium">{item.name}</span>
+                        <span className="text-base font-black">{item.name}</span>
                         {item.gated && (
                           <span className="ml-2 text-xs px-2 py-0.5 rounded-full bg-gray-100 text-gray-500 border border-gray-200">
                             Premium
                           </span>
                         )}
                       </div>
-                      <p className="text-xs text-gray-500 mt-1 hidden group-hover:block transition-all duration-200">
+                      <p className="text-xs text-gray-500 mt-1">
                         {item.description}
                       </p>
                     </div>
@@ -143,14 +143,14 @@ export default function Sidebar() {
                   }`}
                 >
                   <div className="flex items-center">
-                    <span className="font-medium">{item.name}</span>
+                    <span className="text-base font-black">{item.name}</span>
                     {item.gated && (
                       <span className="ml-2 text-xs px-2 py-0.5 rounded-full bg-gray-100 text-gray-500 border border-gray-200">
                         Premium
                       </span>
                     )}
                   </div>
-                  <p className="text-xs text-gray-500 mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                  <p className="text-xs text-gray-500 mt-1">
                     {item.description}
                   </p>
                 </Link>
