@@ -7,7 +7,7 @@ export default function ExecutiveSummaryPage() {
         {/* OG Image for mobile (and fallback for desktop) */}
         <div className="block md:hidden mb-6">
           <img 
-            src="/220og-image.png" 
+            src="/220ada/220og-image.png" 
             alt="220 ADA - THE BLUEPRINT" 
             className="w-full h-auto rounded-lg shadow-md"
           />

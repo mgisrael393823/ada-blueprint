@@ -7,7 +7,7 @@ export default function HomePage() {
         {/* OG Image displayed on all devices */}
         <div className="mb-8">
           <img 
-            src="/220og-image.png" 
+            src="/220ada/220og-image.png" 
             alt="220 ADA - THE BLUEPRINT" 
             className="w-full h-auto rounded-lg shadow-md"
           />
