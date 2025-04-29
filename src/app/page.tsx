@@ -4,6 +4,15 @@ export default function HomePage() {
   return (
     <Layout>
       <div className="max-w-4xl mx-auto">
+        {/* OG Image displayed on all devices */}
+        <div className="mb-8">
+          <img 
+            src="/220og-image.png" 
+            alt="220 ADA - THE BLUEPRINT" 
+            className="w-full h-auto rounded-lg shadow-md"
+          />
+        </div>
+        
         <h1 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl mb-6">
           220 Ada – Lease-Up Strategy & Competitive Blueprint
         </h1>
