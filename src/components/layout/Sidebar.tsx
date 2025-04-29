@@ -61,7 +61,7 @@ export default function Sidebar() {
   return (
     <>
       {/* Mobile menu button */}
-      <div className="fixed top-4 left-4 z-50 md:hidden">
+      <div className="fixed top-4 right-4 z-50 md:hidden">
         <button
           type="button"
           className="p-2 rounded-md bg-white shadow-md hover:bg-gray-50 transition-colors"
