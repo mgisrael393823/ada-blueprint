@@ -22,7 +22,8 @@ export const metadata: Metadata = {
     description: 'THE BLUEPRINT',
     images: [
       {
-        url: '/220og-image.png',
+        // Make sure image paths work with basePath
+        url: '/220ada/220og-image.png',
         width: 1200,
         height: 630,
         alt: '220 ADA - The Blueprint',
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: '220 ADA',
     description: 'THE BLUEPRINT',
-    images: ['/220og-image.png'],
+    images: ['/220ada/220og-image.png'],
   },
 };
 
