@@ -8,6 +8,8 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  basePath: '/220ada',
+  assetPrefix: '/220ada',
 }
 
 export default nextConfig
