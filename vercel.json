@@ -1,6 +1,5 @@
 {
   "framework": "nextjs",
   "cleanUrls": true,
-  "trailingSlash": false,
-  "basePath": "/220ada"
+  "trailingSlash": false
 }
