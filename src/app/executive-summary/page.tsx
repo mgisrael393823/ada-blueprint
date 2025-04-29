@@ -4,12 +4,12 @@ export default function ExecutiveSummaryPage() {
   return (
     <Layout>
       <div className="max-w-4xl mx-auto">
-        {/* OG Image for mobile (and fallback for desktop) */}
-        <div className="block md:hidden mb-6">
+        {/* Page header image */}
+        <div className="mb-6 flex justify-center">
           <img 
-            src="/220ada/220og-image.png" 
-            alt="220 ADA - THE BLUEPRINT" 
-            className="w-full h-auto rounded-lg shadow-md"
+            src="/execsummary.png" 
+            alt="220 ADA - Executive Summary" 
+            className="w-full md:w-1/2 h-auto rounded-lg shadow-md"
           />
         </div>
         

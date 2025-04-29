@@ -16,10 +16,17 @@ const inconsolata = Inconsolata({
 });
 
 export const metadata: Metadata = {
-  title: '220 Ada – Lease-Up Strategy & Competitive Blueprint',
+  title: '220 ADA | THE BLUEPRINT',
   description: 'Interactive web presentation for 220 N. Ada Street in Chicago\'s Fulton Market district',
+  icons: {
+    icon: [
+      { url: '/favicon.png', type: 'image/png' }
+    ],
+    shortcut: '/favicon.png',
+    apple: '/favicon.png',
+  },
   openGraph: {
-    title: '220 ADA',
+    title: '220 ADA | THE BLUEPRINT',
     description: 'THE BLUEPRINT',
     images: [
       {
@@ -34,7 +41,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: '220 ADA',
+    title: '220 ADA | THE BLUEPRINT',
     description: 'THE BLUEPRINT',
     images: ['/220og-image.png'],
   },
