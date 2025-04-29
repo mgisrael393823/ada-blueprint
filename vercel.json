@@ -5,6 +5,9 @@
   "env": {
     "NEXT_PUBLIC_BASE_PATH": ""
   },
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ],
   "headers": [
     {
       "source": "/(.*)",
@@ -15,8 +18,5 @@
         }
       ]
     }
-  ],
-  "routes": [
-    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
