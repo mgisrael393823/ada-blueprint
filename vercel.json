@@ -4,5 +4,16 @@
   "trailingSlash": false,
   "env": {
     "NEXT_PUBLIC_BASE_PATH": ""
-  }
+  },
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        }
+      ]
+    }
+  ]
 }
