@@ -1,20 +1,13 @@
-import { NextConfig } from 'next'
-
-const nextConfig: NextConfig = {
-  /* config options here */
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
   typescript: {
     ignoreBuildErrors: true,
   },
-  // For production deployment:
-  ...(process.env.NODE_ENV === 'production' ? {
-    basePath: '/220ada',
-    assetPrefix: '/220ada',
-  } : {}),
-  // Output standalone build for better compatibility
-  output: 'standalone',
+  // Keep it simple for direct deployment
+  output: 'standalone'
 }
 
-export default nextConfig
+module.exports = nextConfig
