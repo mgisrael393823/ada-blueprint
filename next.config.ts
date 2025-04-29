@@ -6,11 +6,12 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
-  // Set basePath for subpath routing in production
-  ...(process.env.NODE_ENV === 'production' ? {
-    basePath: '',
-    assetPrefix: '',
-  } : {}),
+  // Remove basePath for direct access, we'll handle the routing through rewrites
+  basePath: '',
+  // Set environment variables for client-side access
+  env: {
+    NEXT_PUBLIC_BASE_PATH: ''
+  },
   // Add image domains for external images
   images: {
     domains: ['localhost', 'disrvpt.co', 'disrvpt-web-canvas.vercel.app'],

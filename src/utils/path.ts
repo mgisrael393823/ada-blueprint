@@ -2,10 +2,8 @@
  * Prefixes a path with the base path when in production
  */
 export function getAssetPath(path: string): string {
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
-  
-  // Make sure path starts with / and doesn't duplicate if basePath ends with /
+  // Simplified version that just returns the path
+  // No basePath needed since we're serving from root
   const normalizedPath = path.startsWith('/') ? path : `/${path}`;
-  
-  return `${basePath}${normalizedPath}`;
+  return normalizedPath;
 }

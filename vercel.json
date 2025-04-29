@@ -1,5 +1,8 @@
 {
   "framework": "nextjs",
   "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "env": {
+    "NEXT_PUBLIC_BASE_PATH": ""
+  }
 }
