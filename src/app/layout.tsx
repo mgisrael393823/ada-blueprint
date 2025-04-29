@@ -2,6 +2,7 @@ import './globals.css';
 import './tailwind-fix.css';
 import type { Metadata } from 'next';
 import { Montserrat, Inconsolata } from 'next/font/google';
+import { Analytics } from '@vercel/analytics/react';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -60,7 +61,10 @@ export default function RootLayout({
           rel="stylesheet"
         />
       </head>
-      <body className={`${montserrat.variable} ${inconsolata.variable} font-body bg-white`}>{children}</body>
+      <body className={`${montserrat.variable} ${inconsolata.variable} font-body bg-white`}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
