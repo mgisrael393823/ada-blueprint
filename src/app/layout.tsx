@@ -1,4 +1,5 @@
 import './globals.css';
+import './tailwind-fix.css';
 import type { Metadata } from 'next';
 import { Montserrat, Inconsolata } from 'next/font/google';
 
@@ -22,8 +23,7 @@ export const metadata: Metadata = {
     description: 'THE BLUEPRINT',
     images: [
       {
-        // Make sure image paths work with basePath
-        url: '/220ada/220og-image.png',
+        url: '/220og-image.png',
         width: 1200,
         height: 630,
         alt: '220 ADA - The Blueprint',
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: '220 ADA',
     description: 'THE BLUEPRINT',
-    images: ['/220ada/220og-image.png'],
+    images: ['/220og-image.png'],
   },
 };
 
@@ -47,6 +47,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Inconsolata:wght@400&display=swap"
+          rel="stylesheet"
+        />
+      </head>
       <body className={`${montserrat.variable} ${inconsolata.variable} font-body bg-white`}>{children}</body>
     </html>
   );
