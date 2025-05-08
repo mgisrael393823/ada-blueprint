@@ -360,15 +360,11 @@ export default function MarketIntelligencePage() {
             
             <div className="mb-6">
               <h3 className="text-xl font-medium text-gray-900 mb-3">Location and Boundaries</h3>
-              <p className="text-gray-600 mb-2">Fulton Market is generally defined as the area bounded by:</p>
+              <p className="text-gray-600 mb-2">The Fulton Market District in Chicago is located on the Near West Side and is bounded by:</p>
               <ul className="space-y-1 text-gray-600 mb-4">
                 <li className="flex items-start">
                   <span className="font-medium mr-2">•</span>
-                  <span>North: Grand Avenue</span>
-                </li>
-                <li className="flex items-start">
-                  <span className="font-medium mr-2">•</span>
-                  <span>South: Madison Street</span>
+                  <span>North: Hubbard Street</span>
                 </li>
                 <li className="flex items-start">
                   <span className="font-medium mr-2">•</span>
@@ -376,7 +372,11 @@ export default function MarketIntelligencePage() {
                 </li>
                 <li className="flex items-start">
                   <span className="font-medium mr-2">•</span>
-                  <span>West: Ashland Avenue</span>
+                  <span>South: Randolph Street</span>
+                </li>
+                <li className="flex items-start">
+                  <span className="font-medium mr-2">•</span>
+                  <span>West: Ogden Avenue</span>
                 </li>
               </ul>
               <p className="text-gray-600">
