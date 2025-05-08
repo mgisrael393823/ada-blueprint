@@ -24,8 +24,8 @@ export default function PasswordProtect() {
       });
 
       if (response.ok) {
-        // Password is correct, refresh the page to load the content
-        router.refresh();
+        // Password is correct, do a full page reload to apply the cookie
+        window.location.reload();
       } else {
         const data = await response.json();
         setError(data.message || 'Invalid password');
@@ -41,10 +41,13 @@ export default function PasswordProtect() {
     <div className="min-h-screen flex items-center justify-center bg-gray-50">
       <div className="max-w-md w-full space-y-8 p-10 bg-white rounded-xl shadow-lg">
         <div className="text-center">
-          <img
-            src="/passwordpage.webp"
-            alt="220 ADA"
-            className="mx-auto w-full h-auto max-h-40 object-contain mb-4"
+          <video
+            src="/passwordpage.webm"
+            className="mx-auto w-full h-auto max-h-60 object-contain mb-4"
+            autoPlay
+            loop
+            muted
+            playsInline
           />
           <p className="mt-2 text-sm text-gray-600">
             This content is password protected
