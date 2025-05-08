@@ -42,13 +42,10 @@ export default function PasswordProtect() {
       <div className="max-w-md w-full space-y-8 p-10 bg-white rounded-xl shadow-lg">
         <div className="text-center">
           <img
-            src="/favicon.png"
+            src="/passwordpage.webp"
             alt="220 ADA"
-            className="mx-auto h-12 w-auto"
+            className="mx-auto w-full h-auto max-h-40 object-contain mb-4"
           />
-          <h2 className="mt-6 text-3xl font-bold text-gray-900">
-            220 ADA - THE BLUEPRINT
-          </h2>
           <p className="mt-2 text-sm text-gray-600">
             This content is password protected
           </p>
