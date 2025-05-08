@@ -3,6 +3,8 @@ import './tailwind-fix.css';
 import type { Metadata } from 'next';
 import { Montserrat, Inconsolata } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
+import { headers } from 'next/headers';
+import AuthWrapper from '@/components/AuthWrapper';
 
 const montserrat = Montserrat({
   subsets: ['latin'],
@@ -53,6 +55,8 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Get auth required header from middleware (server-side only)
+  const authRequired = headers().get('x-auth-required') === 'true';
   return (
     <html lang="en">
       <head>
@@ -72,9 +76,13 @@ export default function RootLayout({
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Inconsolata:wght@400&display=swap"
           rel="stylesheet"
         />
+        {/* Meta tag for authentication status */}
+        <meta name="x-auth-required" content={authRequired ? 'true' : 'false'} />
       </head>
       <body className={`${montserrat.variable} ${inconsolata.variable} font-body bg-white`}>
-        {children}
+        <AuthWrapper>
+          {children}
+        </AuthWrapper>
         <Analytics />
       </body>
     </html>
