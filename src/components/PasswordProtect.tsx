@@ -41,13 +41,10 @@ export default function PasswordProtect() {
     <div className="min-h-screen flex items-center justify-center bg-gray-50">
       <div className="max-w-md w-full space-y-8 p-10 bg-white rounded-xl shadow-lg">
         <div className="text-center">
-          <video
-            src="/passwordpage.webm"
+          <img
+            src="/passwordpage.webp"
             className="mx-auto w-full h-auto max-h-60 object-contain mb-4"
-            autoPlay
-            loop
-            muted
-            playsInline
+            alt="Password page"
           />
           <p className="mt-2 text-sm text-gray-600">
             This content is password protected
