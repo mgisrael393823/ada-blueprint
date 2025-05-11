@@ -1,7 +1,7 @@
 import { cookies } from 'next/headers';
 import { NextResponse } from 'next/server';
 
-const CORRECT_PASSWORD = 'ada-blueprint'; // Change this to your desired password
+const CORRECT_PASSWORD = 'iwonttell1'; // Change this to your desired password
 const COOKIE_NAME = 'ada-authentication';
 const COOKIE_VALUE = 'authenticated';
 const COOKIE_EXPIRY = 60 * 60 * 24 * 7; // 7 days in seconds
